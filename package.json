@@ -1,0 +1,43 @@
+{
+  "name": "personal-loan-workspace",
+  "version": "1.0.0",
+  "description": "Personal Loan Application Workspace - Mobile App + API",
+  "private": true,
+  "scripts": {
+    "install:all": "cd simulation-app && npm install && cd ../personal-loan-api && npm install && cd ..",
+    "build:api": "cd personal-loan-api && npm run build",
+    "start": "concurrently \"npm run start:api\" \"npm run start:app\"",
+    "start:api": "cd personal-loan-api && npm start",
+    "start:app": "cd simulation-app && npm start",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:app\"",
+    "dev:api": "cd personal-loan-api && npm run dev",
+    "dev:app": "cd simulation-app && npm start",
+    "test": "cd simulation-app && npm test",
+    "test:watch": "cd simulation-app && npm test -- --watchAll",
+    "test:coverage": "cd simulation-app && npm test -- --coverage",
+    "setup": "npm run install:all && npm run build:api",
+    "clean": "rm -rf personal-loan-api/dist personal-loan-api/node_modules simulation-app/node_modules node_modules",
+    "reset": "npm run clean && npm run setup"
+  },
+  "keywords": [
+    "loan",
+    "mobile-app",
+    "api", 
+    "react-native",
+    "express",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "workspaces": [
+    "simulation-app",
+    "personal-loan-api"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

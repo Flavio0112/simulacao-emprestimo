@@ -1,0 +1,28 @@
+{
+  "name": "personal-loan-api",
+  "version": "1.0.0",
+  "description": "Simple backend API for personal loan application",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "prebuild": "rm -rf dist",
+    "postbuild": "echo 'Build completed successfully'"
+  },
+  "keywords": ["loan", "api", "express", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.1"
+  }
+}
