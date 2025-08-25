@@ -1,6 +1,6 @@
-# Workspace da Aplicação de Empréstimo Pessoal
+# Aplicativo de Empréstimo Pessoal
 
-Aplicação completa de empréstimo pessoal com app mobile e API backend.
+Simulado completo de empréstimo pessoal com app mobile e API backend.
 
 ## Estrutura do Projeto
 
