@@ -149,12 +149,6 @@ O backend fornece estes endpoints:
 5. **Trocar para API Real**: Definir `USE_MOCK_API: false` no app mobile
 6. **Testar Integração**: Verificar se o app mobile funciona com a API real
 
-## Notas de Deploy
-
-- **App Mobile**: Usar serviço de build do Expo ou EAS Build
-- **API**: Pode ser deployada em qualquer hosting Node.js (Heroku, Vercel, AWS, etc.)
-- **Ambiente**: Atualizar URL base da API para produção no app mobile
-
 ## Solução de Problemas
 
 ### Problemas de Conexão com a API
